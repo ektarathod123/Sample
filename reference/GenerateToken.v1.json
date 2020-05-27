@@ -61,7 +61,7 @@
         }
       }
     },
-    "/Auth/Login": {
+    "/Auth/Logins": {
       "post": {
         "summary": "",
         "operationId": "post-Auth-Login",
@@ -99,7 +99,8 @@
             }
           }
         }
-      }
+      },
+      "parameters": []
     }
   },
   "components": {
