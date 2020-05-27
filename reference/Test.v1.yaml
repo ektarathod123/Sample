@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  title: GenerateToken
+  title: GenerateTokens
   version: '1.0'
   description: Test Generate Token
   contact:
@@ -8,7 +8,7 @@ info:
 servers:
   - url: 'http://localhost:56492'
 paths:
-  /Auth/GenerateToken:
+  /Auth/GenerateTokens:
     get:
       summary: Your GET endpoint
       tags: []
