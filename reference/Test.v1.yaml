@@ -8,7 +8,7 @@ info:
 servers:
   - url: 'http://localhost:56492'
 paths:
-  /Auth/GenerateToken:
+  /Auth/GenerateTokens:
     get:
       summary: Your GET endpoint
       tags: []
