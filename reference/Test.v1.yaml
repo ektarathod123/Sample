@@ -1,0 +1,15 @@
+openapi: 3.0.0
+info:
+  title: Test
+  version: '1.0'
+  description: for testing
+  contact:
+    name: Test
+  license: {}
+servers:
+  - url: 'http://localhost:3000'
+    description: ss
+paths: {}
+components:
+  schemas: {}
+  securitySchemes: {}
