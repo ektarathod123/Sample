@@ -47,13 +47,15 @@ paths:
               properties:
                 UserName:
                   type: string
+                  description: UserName Required
                 Password:
                   type: string
+                  description: Password Required.
               required:
                 - UserName
                 - Password
         description: ''
-      description: testing token 123
+      description: Test Generate Token
     parameters: []
 components:
   schemas: {}
