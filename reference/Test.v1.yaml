@@ -1,15 +1,59 @@
 openapi: 3.0.0
 info:
-  title: Test
+  title: GenerateToken
   version: '1.0'
-  description: for testing
+  description: Test Generate Token
   contact:
     name: Test
-  license: {}
 servers:
-  - url: 'http://localhost:3000'
-    description: ss
-paths: {}
+  - url: 'http://localhost:56492'
+paths:
+  /Auth/GenerateToken:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ResponseStatus:
+                    type: boolean
+                  ResponseData:
+                    type: object
+                    properties:
+                      Token:
+                        type: object
+                        properties:
+                          Token:
+                            type: string
+                          ExpiryTime:
+                            type: string
+                          ClientKey:
+                            type: string
+                  Message:
+                    type: string
+                  ErrorData:
+                    type: string
+      operationId: get-GenerateToken
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                UserName:
+                  type: string
+                Password:
+                  type: string
+              required:
+                - UserName
+                - Password
+        description: ''
+      description: testing token
+    parameters: []
 components:
   schemas: {}
-  securitySchemes: {}
